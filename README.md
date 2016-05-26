@@ -1,0 +1,4 @@
+### optical-lattice band structure calculation
+These collection of codes compute the band structure and related tunneling energies for atoms hopping between unit cells. The calculations are general and can be used for both symmetric and asymmetric lattice potentials, and are done in a plane-wave basis.
+
+The module `inputspw.py` provides all the relevant user defined inputs, such as lattice depth, grid features, etc. The module `gridspw.py` sets up the relevant grids for the problem. The module `hamiltonianpw.py` computes the single-particle Hamiltonian, and also the tunneling matrix elements. The main program is `maindoublepw.py`. The main program imports all the modules and computes the band structure and tunneling energies. The outputs are in the form of text files, with file extension `.out`.
